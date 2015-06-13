@@ -1,0 +1,43 @@
+Compiled from "MessServer.java"
+public class MessServer extends javax.swing.JFrame implements java.awt.event.ActionListener {
+  java.util.ArrayList al;
+  java.util.ArrayList un;
+  java.awt.Toolkit tkt;
+  java.awt.Dimension dm;
+  java.net.ServerSocket ss;
+  java.net.Socket s;
+  javax.swing.JButton start;
+  javax.swing.JButton stop;
+  javax.swing.JTextField port;
+  javax.swing.JLabel portl;
+  javax.swing.JPanel jp1;
+  javax.swing.JPanel jp2;
+  javax.swing.JTextArea display;
+  javax.swing.JScrollPane jsp;
+  public MessServer();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public static void main(java.lang.String...);
+}
+
+Compiled from "ServerThread.java"
+public class ServerThread implements java.lang.Runnable {
+  java.net.Socket s;
+  java.util.ArrayList al;
+  java.util.ArrayList un;
+  javax.swing.JTextArea display;
+  ServerThread(java.net.Socket, java.util.ArrayList, java.util.ArrayList, javax.swing.JTextArea);
+  public void run();
+  public void tellEveryOne(java.lang.String);
+}
+
+
+Compiled from "StartServer.java"
+public class StartServer implements java.lang.Runnable {
+  java.net.Socket s;
+  java.net.ServerSocket ss;
+  java.util.ArrayList al;
+  java.util.ArrayList un;
+  javax.swing.JTextArea display;
+  StartServer(java.net.Socket, java.net.ServerSocket, java.util.ArrayList, java.util.ArrayList, javax.swing.JTextArea);
+  public void run();
+}

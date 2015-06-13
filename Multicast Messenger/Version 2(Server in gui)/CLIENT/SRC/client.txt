@@ -1,0 +1,70 @@
+Error: invalid index #0
+class ??? {
+}
+Error: invalid index #0
+class ??? {
+}
+Error: invalid index #0
+class ??? {
+}
+Error: invalid index #0
+class ??? {
+}
+Error: invalid index #0
+class ??? {
+}
+Error: invalid index #0
+class ??? {
+}
+Compiled from "ClientThread.java"
+public class ClientThread implements java.lang.Runnable {
+  java.io.DataInputStream din;
+  javax.swing.JTextArea ta1;
+  javax.swing.JTextArea ta2;
+  javax.swing.JFrame f;
+  public ClientThread(java.io.DataInputStream, javax.swing.JTextArea, javax.swing.JTextArea, javax.swing.JFrame);
+  public void run();
+}
+Compiled from "MyClient.java"
+public class MyClient extends java.awt.event.WindowAdapter implements java.awt.event.ActionListener {
+  javax.swing.JFrame f;
+  javax.swing.JTextArea ta1;
+  javax.swing.JTextArea ta2;
+  javax.swing.JTextField ta3;
+  javax.swing.JButton lo;
+  java.net.Socket s;
+  java.io.DataInputStream din;
+  java.io.DataOutputStream dout;
+  java.lang.String s1;
+  java.lang.String s2;
+  java.lang.String user;
+  java.lang.String ipa;
+  int port;
+  javax.swing.JScrollPane jp1;
+  javax.swing.JScrollPane jp2;
+  javax.swing.JScrollPane jp3;
+  javax.swing.JLabel l1;
+  javax.swing.JLabel l2;
+  javax.swing.JLabel l3;
+  public MyClient(java.lang.String, java.lang.String, int);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public void windowClosing(java.awt.event.WindowEvent);
+  public void windowIconified(java.awt.event.WindowEvent);
+}
+Compiled from "StartClient.java"
+public class StartClient implements java.awt.event.ActionListener {
+  javax.swing.JButton login;
+  javax.swing.JTextField logname;
+  javax.swing.JTextField ip;
+  javax.swing.JTextField port;
+  javax.swing.JFrame jf;
+  javax.swing.JLabel loginl;
+  javax.swing.JLabel ipl;
+  javax.swing.JLabel portl;
+  java.lang.String user;
+  java.lang.String ipa;
+  int pn;
+  public StartClient();
+  public static void main(java.lang.String...);
+  public void actionPerformed(java.awt.event.ActionEvent);
+}
